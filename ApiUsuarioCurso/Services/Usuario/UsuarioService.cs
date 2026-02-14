@@ -70,7 +70,7 @@ namespace ApiUsuarioCurso.Services.Usuario
                 usuarioBanco.Email = usuarioEdicaoDto.Email;
                 usuarioBanco.Usuario = usuarioEdicaoDto.Usuario;
 
-                usuarioBanco.DataAlteracao = DateTime.Now;
+                usuarioBanco.DataAlteracao = DateTime.UtcNow;
 
                 _context.Update(usuarioBanco);
                 await _context.SaveChangesAsync();

@@ -15,8 +15,8 @@ namespace ApiUsuarioCurso.Dto.Usuario
 
         [Required(ErrorMessage = "Digite o Email")]
         public string Email { get; set; } = string.Empty;
-        public DateTime DataCriacao { get; set; } = DateTime.Now;
-        public DateTime DataAlteracao { get; set; } = DateTime.Now;
+        public DateTime DataCriacao { get; set; } = DateTime.UtcNow;
+        public DateTime DataAlteracao { get; set; } = DateTime.UtcNow;
 
         [Required(ErrorMessage = "Digite a Senha")]
         public string Senha { get; set; } = string.Empty;
